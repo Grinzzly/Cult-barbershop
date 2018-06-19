@@ -485,7 +485,7 @@ a:focus{
 
 .header-banner p{
 	font-family: 'NoemieScript';
-	font-size: 32px;
+	font-size: 70px;
 	color: rgba(255,255,255,0.76);
 	padding-top: 30px;
 	padding-bottom: 10px;
@@ -647,6 +647,7 @@ a:focus{
 	font-size: 20px;
 	display: inline-block;
 	background: #be9342;
+  border-radius: 8px;
 	text-transform: uppercase;
 	padding: 14px 20px 10px;
 	color: #fff;
@@ -704,6 +705,12 @@ a:focus{
 .gallery{
 	padding: 100px 0 0;
 	background: #2f2c2c;
+}
+
+.gallery-goto {
+  color: #be9342;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .row.no-pad {
@@ -905,6 +912,43 @@ a:focus{
 	color: #fff;
 }
 
+.subscribe-button {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  right: 25px;
+  bottom: 25px;
+  background: #be9342;
+  color: #fff;
+  width: 150px;
+  height: 150px;
+  border: 2px solid #EAA502;
+  border-radius: 50%;
+  font-size: 18px;
+  z-index: 1;
+  user-select: none;
+
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.subscribe-button:hover {
+  color: #fff;
+  background-color: #EAA502;
+  cursor: pointer;
+
+  -webkit-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+.subscribe-button p {
+  margin: 0;
+}
+
 .contactus{
 	background: #be9342;
 }
@@ -937,9 +981,23 @@ a:focus{
   letter-spacing: 0.18em;
 }
 
+.contact-form-content a {
+  color: #333;
+  text-decoration: none;
+}
+
+.contact-form-content a:hover {
+  color: #545454;
+}
+
 .contact-form-content-mail, .contact-form-content-address{
   display: inherit;
 }
+
+.contact-form-content-phone img {
+  width: 15px;
+}
+
 
 .contact-form .form-control{
 	border: none;
@@ -1164,8 +1222,12 @@ footer{
 		padding-top: 60px;
 	}
 
+  .gallery-goto {
+    color: #be9342;
+  }
+
 	.header-banner p{
-		font-size: 20px;
+		font-size: 50px;
 	}
 
 	.header-banner h3{
@@ -1210,9 +1272,18 @@ footer{
 		color: #fff;
 	}
 
+  .subscribe-button {
+    font-size: 14px;
+    width: 100px;
+    height: 100px;
+    right: 20px;
+    bottom: 20px;
+  }
+
   .contact-form-content {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
+    text-align: center;
     justify-content: space-evenly;
   }
 
