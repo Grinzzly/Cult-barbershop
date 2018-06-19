@@ -930,6 +930,17 @@ a:focus{
 	margin-bottom: 50px;
 }
 
+.contact-form-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  letter-spacing: 0.18em;
+}
+
+.contact-form-content-mail, .contact-form-content-address{
+  display: inherit;
+}
+
 .contact-form .form-control{
 	border: none;
 	outline: 0;
@@ -1198,6 +1209,16 @@ footer{
 		font-size: 14px;
 		color: #fff;
 	}
+
+  .contact-form-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .contact-form-content-mail, .contact-form-content-address {
+    display: none;
+  }
 }
 
 /* Small Mobile Layout */
