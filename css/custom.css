@@ -10,6 +10,13 @@
 	font-style: normal;
 }
 
+@font-face {
+	font-family: 'ChampagneAndLimousines';
+	src: url('../fonts/ChampagneAndLimousines.ttf');
+	font-weight: normal;
+	font-style: normal;
+}
+
 body{
 	font-size: 16px;
 	font-family: 'Montserrat', sans-serif;
@@ -22,7 +29,7 @@ h4,
 h5,
 h6{
 	margin-top:0;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'ChampagneAndLimousines', sans-serif;
 	font-weight: 700;
 }
 
@@ -757,7 +764,7 @@ a:focus{
 
 .gallery-info p{
 	display: inline-block;
-	font-family: 'Josefin Sans', sans-serif;
+	font-family: 'ChampagneAndLimousines', sans-serif;
 	font-size: 20px;
 	color: #be9342;
 	text-transform: uppercase;
@@ -923,8 +930,15 @@ a:focus{
 	margin-bottom: 50px;
 }
 
-.contact-form{
+.contact-form-content {
+  display: flex;
+  flex-direction: column;
+  text-align: left;
+  letter-spacing: 0.18em;
+}
 
+.contact-form-content-mail, .contact-form-content-address{
+  display: inherit;
 }
 
 .contact-form .form-control{
@@ -1195,6 +1209,16 @@ footer{
 		font-size: 14px;
 		color: #fff;
 	}
+
+  .contact-form-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+  }
+
+  .contact-form-content-mail, .contact-form-content-address {
+    display: none;
+  }
 }
 
 /* Small Mobile Layout */
