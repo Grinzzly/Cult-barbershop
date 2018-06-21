@@ -1,16 +1,4 @@
 @font-face {
-  font-family: 'NoemieScript';
-  src: url('../fonts/NoemieScriptRegular.eot');
-  src: url('../fonts/NoemieScriptRegular.eot?#iefix') format('embedded-opentype'),
-  url('../fonts/NoemieScriptRegular.woff2') format('woff2'),
-  url('../fonts/NoemieScriptRegular.woff') format('woff'),
-  url('../fonts/NoemieScriptRegular.ttf') format('truetype'),
-  url('../fonts/NoemieScriptRegular.svg#NoemieScriptRegular') format('svg');
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: 'ChampagneAndLimousines';
   src: url('../fonts/ChampagneAndLimousines.ttf');
   font-weight: normal;
@@ -501,11 +489,12 @@ a:focus {
 }
 
 .header-banner h1 {
-  font-family: 'NoemieScript';
-  font-size: 70px;
-  color: rgba(255, 255, 255, 0.76);
+  font-family: 'Alfa Slab One', cursive;
+  text-transform: uppercase;
+  font-size: 120px;
+  letter-spacing: 8px;
+  color: #e0e0e0;
   padding-top: 30px;
-  padding-bottom: 10px;
 }
 
 .header-banner h3 {
@@ -515,6 +504,10 @@ a:focus {
   text-transform: uppercase;
   letter-spacing: 0.1em;
   line-height: 1.3em;
+}
+
+.header-banner-barber {
+  width: 700px;
 }
 
 .banner-info-single {
