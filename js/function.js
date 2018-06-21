@@ -1,20 +1,23 @@
 const $window = $(window);
 
+AOS.init({
+  disable: 'mobile',
+  easing: 'ease-in-sine',
+  delay: 100,
+});
+
 /* Preloader Effect */
 $window.load(function () {
   $(".preloader").fadeOut(400);
 });
 
 /* Top Menu */
-$(".navbar-link-item").on('click', function () {
-  console.log(1);
+$('#navigation ul li a').on('click', function () {
   const id = $(this).attr('href');
   const h = parseFloat($(id).offset().top);
   $('body,html').stop().animate({
     scrollTop: h - 70
   }, 800);
-
-  $(".navbar-collapse").collapse("hide");
 
   return false;
 });
@@ -29,7 +32,11 @@ $window.scroll(function () {
 });
 
 /* slick nav */
-$('#main-menu').slicknav({prependTo: '#responsive-menu', label: ''});
+$('#main-menu').slicknav({
+  prependTo: '#responsive-menu',
+  closeOnClick:true,
+  label: '',
+});
 
 /*OwlCarousels Testimonial Start*/
 $('#testimonial-slider').owlCarousel({
