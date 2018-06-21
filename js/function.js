@@ -1,5 +1,11 @@
 const $window = $(window);
 
+AOS.init({
+  disable: 'mobile',
+  easing: 'ease-in-sine',
+  delay: 100,
+});
+
 /* Preloader Effect */
 $window.load(function () {
   $(".preloader").fadeOut(400);

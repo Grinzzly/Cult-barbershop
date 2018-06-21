@@ -26,6 +26,8 @@
     <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
     <link rel="icon" href="images/favicon.ico" type="image/x-icon">
 
+    <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
@@ -44,7 +46,7 @@
         </div>
         <p class="loading-text">Загрузка</p>
       </div>
-      </div>
+    </div>
     <!-- Preloader Ends -->
 
     <!-- Header Section Starts-->
@@ -92,7 +94,7 @@
           <div class="col-md-12">
             <div class="header-banner">
               <img src="images/logo.png" alt="Logo" />
-              <p>Cult Barbershop</p>
+              <h1>Cult Barbershop</h1>
               <h3>Поклонники <br />Стиля и Красоты</h3>
             </div>
           </div>
@@ -186,7 +188,7 @@
         <div class="row">
           <div class="col-md-3 col-sm-6">
             <div class="service-single">
-              <div class="icon-box-outer">
+              <div data-aos="zoom-in" class="icon-box-outer">
                 <div class="icon-box">
                   <i class="flaticon-shaver"></i>
                 </div>
@@ -200,7 +202,7 @@
 
           <div class="col-md-3 col-sm-6">
             <div class="service-single">
-              <div class="icon-box-outer">
+              <div data-aos="zoom-in" class="icon-box-outer">
                 <div class="icon-box">
                   <i class="flaticon-razor"></i>
                 </div>
@@ -214,7 +216,7 @@
 
           <div class="col-md-3 col-sm-6">
             <div class="service-single">
-              <div class="icon-box-outer">
+              <div data-aos="zoom-in" class="icon-box-outer">
                 <div class="icon-box">
                   <i class="flaticon-scissors"></i>
                 </div>
@@ -228,7 +230,7 @@
 
           <div class="col-md-3 col-sm-6">
             <div class="service-single">
-              <div class="icon-box-outer">
+              <div data-aos="zoom-in" class="icon-box-outer">
                 <div class="icon-box">
                   <i class="flaticon-brush"></i>
                 </div>
@@ -257,7 +259,7 @@
 
         <div class="row">
           <div class="col-md-4">
-            <div class="team-box">
+            <div data-aos="fade-right" class="team-box">
               <figure>
                 <img src="images/team-1.png" alt="" />
               </figure>
@@ -266,10 +268,9 @@
                 <p>Barber</p>
                 <h3>Иван Иванов</h3>
                 <div class="team-social">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
                   <a href="#"><i class="fa fa-instagram"></i></a>
-                  <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-vk"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
                   <a href="#"><i class="fa fa-twitter"></i></a>
                 </div>
               </div>
@@ -277,7 +278,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="team-box">
+            <div  data-aos="fade-down" class="team-box">
               <figure>
                 <img src="images/team-2.png" alt="" />
               </figure>
@@ -286,10 +287,9 @@
                 <p>Barber</p>
                 <h3>Фёдор Петрович</h3>
                 <div class="team-social">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
                   <a href="#"><i class="fa fa-instagram"></i></a>
-                  <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-vk"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
                   <a href="#"><i class="fa fa-twitter"></i></a>
                 </div>
               </div>
@@ -297,7 +297,7 @@
           </div>
 
           <div class="col-md-4">
-            <div class="team-box">
+            <div data-aos="fade-left" class="team-box">
               <figure>
                 <img src="images/team-3.png" alt="" />
               </figure>
@@ -306,10 +306,9 @@
                 <p>Expert Barber</p>
                 <h3>Илья Русин</h3>
                 <div class="team-social">
-                  <a href="#"><i class="fa fa-facebook"></i></a>
                   <a href="#"><i class="fa fa-instagram"></i></a>
-                  <a href="#"><i class="fa fa-pinterest-p"></i></a>
-                  <a href="#"><i class="fa fa-linkedin"></i></a>
+                  <a href="#"><i class="fa fa-vk"></i></a>
+                  <a href="#"><i class="fa fa-facebook"></i></a>
                   <a href="#"><i class="fa fa-twitter"></i></a>
                 </div>
               </div>
@@ -455,7 +454,11 @@
       <div class="container">
         <div class="row no-pad">
           <div class="col-md-6">
-            <div class="store-image">
+            <div
+              class="store-image"
+              data-aos="fade-right"
+              data-aos-duration="2000"
+            >
               <img src="images/store.jpg" alt="" />
             </div>
           </div>
@@ -619,6 +622,8 @@
     <div class="subscribe-button">
       <p>Записаться сейчас</p>
     </div>
+
+    <span class="shadow"></span>
     <!-- Subscribe button ends -->
 
     <!-- Contactus section starts -->
@@ -670,25 +675,11 @@
         <div class="row">
           <div class="col-md-12">
             <div class="footer-social">
-              <a href="#">Facebook</a>
-              <a href="#">Twitter</a>
-              <a href="#">Instagram</a>
-              <a href="#">Vkontakte</a>
-              <a href="#">Googleplus</a>
-              <a href="#">Linkedin</a>
-            </div>
-
-            <div class="footer-menu">
-              <ul>
-                <li><a href="#home">Домой</a></li>
-                <li><a href="#about">О нас</a></li>
-                <li><a href="#service">Услуги</a></li>
-                <li><a href="#ourteam">Команда</a></li>
-                <li><a href="#gallery">Галлерея</a></li>
-                <li><a href="#pricing">Цены</a></li>
-                <li><a href="#testimonial">Отзывы</a></li>
-                <li><a href="#contact">Контакты</a></li>
-              </ul>
+              <a href="#"><i class="fa fa-vk"></i></a>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+              <a href="#"><i class="fa fa-instagram"></i></a>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+              <a href="#"><i class="fa fa-youtube"></i></a>
             </div>
 
             <div class="site-info">
@@ -709,6 +700,7 @@
     <script src="js/jquery.slicknav.js"></script>
     <!-- Owl Carousel js file -->
     <script src="js/owl.carousel.js"></script>
+    <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
     <!-- Main js facades file -->
     <script src="js/function.js"></script>
 </body>
