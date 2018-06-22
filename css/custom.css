@@ -1272,6 +1272,10 @@ footer {
     color: #be9342;
   }
 
+  .header-banner h1 {
+    font-size: 80px;
+  }
+
   .header-banner p {
     font-size: 50px;
   }
