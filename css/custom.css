@@ -335,12 +335,16 @@ a:focus {
 }
 
 .navbar-brand {
+  display: flex;
   padding: 1px 15px;
 }
 
 .navbar-brand img {
   filter: brightness(0) invert(1);
   transition: all 0.3s;
+  margin: 0;
+  align-self: center;
+  width: 70px;
 }
 
 .navbar-brand h1 {
@@ -512,6 +516,10 @@ a:focus {
 
 .header-banner-barber {
   width: 700px;
+}
+
+.header-banner-logo {
+  width: 350px;
 }
 
 .banner-info-single {
@@ -812,6 +820,10 @@ a:focus {
 .pricing-logo {
   margin-top: 40px;
   margin-bottom: 40px;
+}
+
+.pricing-logo img {
+  width: 250px;
 }
 
 .price-list {
@@ -1286,6 +1298,10 @@ footer {
 
   .header-banner h3 br {
     display: none;
+  }
+
+  .header-banner-logo {
+    width: 250px;
   }
 
   .main-title h2 {
