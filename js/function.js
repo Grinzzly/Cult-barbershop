@@ -63,3 +63,17 @@ $('#testimonial-slider').owlCarousel({
   autoplaySpeed: 1000,
   navText: ['<i class="fa fa-chevron-left"></i>', '<i class="fa fa-chevron-right"></i>'],
 });
+
+$('#contact-form').submit(function(e) {
+  const formContent = $( this ).serialize();
+  console.log(formContent);
+
+  $.ajax({
+    method: 'POST',
+    url: '//formspree.io/contact@cultbarbershop.com',
+    data: formContent,
+    datatype: 'json',
+  });
+  e.preventDefault();
+  $(this).get(0).reset();
+});
