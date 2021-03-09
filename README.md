@@ -1,10 +1,10 @@
-# Cult-barbershop
+# Cult-lyaout
 
 ## About:
 
-This stylish template built with 1170px Bootstrap grid layout so it’s
+Simple yet stylish landing layout built with grid layout so it’s
 fully responsive. It will work well on all the major browser and display
-well on all the devices for e.g. Mobile, Tablet, Ipad etc.
+well on all the devices for e.g. Mobile, Tablet, Sky, Allah etc.
 
 ## Sources and Credits:
 
